@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/fondo.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+html{
+    font-size: 62.5%;
+}
+header{/*Estilos barra de navegación */
+    background-color: #E0E1DD;
+    }
+.navbar{
+    display: flex;
+    min-height: 10vh;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% auto;
+    padding: 0 2rem;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-basis: 65%;
+    }
+.navbar ul a{
+    text-decoration: none;
+    color: #264F6D;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+    text-align: center;
+}
+.navbar img{
+    height: 10vh;
+    min-height: 50px;
+}
+    /*Final estilos barra de navegación*/
+    /*Página principal*/
+.inicio{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.inicio__titulo h1{ 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5rem;
+    color: #264F6D;
+    margin-top: 10%;
+    text-align: center;
+}
+.inicio__titulo div{
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio img{
+   width: 40rem;
+}
+.inicio div{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #264F6D;
+    }
+.inicio__envios-marcas{
+    font-size: 1.6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inicio__envios-marcas h2{
+    flex-basis: 50%;
+    text-align: center;
+    padding: 3rem;
+    max-width: 287px;
+    min-width: 252px;
+}
+.inicio__envios-marcas__envios{
+    text-align: left;
+}
+.inicio__envios-marcas__marcas{
+    text-align: right;
+}
+.footer{ /*pie de pagina*/
+    background-color: #264F6D;
+    min-height: 10vh;
+}
+footer p{
+    font-family: 'Raleway', sans-serif;
+    color: #E0B03E;
+    font-size: 1.6em;
+    padding: 0.5rem;
+} /*fin pie de página*/
+.sobre-nosotros h2{ /*página sobre nosotros*/
+    font-family:'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 4em;
+    text-align: center;
+}
+.sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+.sobre-nosotros p{
+    font-family: 'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 2em;
+}
+.sobre-nosotros__subtitulo1{
+    width: 60vw;
+}
+.sobre-nosotros__subtitulo2{
+    width: 60vw;
+}
+.sobre-nosotros__subtitulo3{
+    width: 60vw;
+    margin-bottom: 4rem;
+} /*fin página sobre nosotros*/
+.preguntas-frecuentes ul{ /*Preguntas frecuentes lista*/
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    border-style: none;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.preguntas-frecuentes nav{
+    display: none;
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% auto;
+    padding: 0 2rem;
+    background-color: #264F6D;
+}
+.preguntas-frecuentes a{
+    text-decoration: none;
+    color: #E0B03E;
+    font-size: 1.2em;
+}
+.preguntas-frecuentes ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0% auto;
+    padding-left: 1rem;
+}
+.preguntas-frecuentes div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.preguntas-frecuentes p{
+    font-family: 'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 2em;
+    text-align: left;
+}
+.preguntas-frecuentes h3{
+    font-family: 'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 3.5em;
+    text-align: center;
+}
+.preguntas-frecuentes section{
+    width: 60vw;
+} /*fin preguntas frecuentes*/
+.nuestros-productos h2{ /*nuestros productos*/
+    font-family:'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+.nuestros-productos h3{
+    font-family:'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.nuestros-productos img{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-left: 110px;
+}
+.nuestros-productos article{
+    padding: 0%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+} /*fin nuestros productos*/
+.contacto h3{ /*contacto*/
+    font-family:'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 25px;
+    text-align: right;
+    margin-top: 15px;
+}
+.contacto p{
+    font-family: 'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 20px;
+    text-align: right;
+}
+.contacto div{
+    width: 300px;
+    height: 400px;
+    padding: 0%;
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 50px;
+}
+.contacto h2{
+    font-family:'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.contacto img{
+    width: 275px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.contacto input{
+    display: inline-block;
+    background-color: #e0af3e73;
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #264F6D;
+    border-color: #264F6D;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contacto select{
+     display: inline-block;
+    background-color: #e0af3e73;
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #264F6D;
+    border-color: #264F6D;
+}
+.contacto textarea{
+    display: inline-block;
+    background-color: #e0af3e73;
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #264F6D;
+    border-color: #264F6D;
+    padding: 10px;
+}
+#enviar{
+    width: 100px;
+    display: block;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.contacto label{
+    font-family: 'Raleway', sans-serif;
+    color: #264F6D;
+    font-size: 20px;
+    display: block;
+    text-align: left;
+}
+.contacto form{
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    padding: 0%;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/*media queries*/
+@media screen and (max-width: 724px) {
+    .preguntas-frecuentes section{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 550px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul{
+        font-size: 1em;
+        padding: 2rem;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+    .footer p{
+        font-size: 1.5em;
+    }
+    .inicio h1{
+        font-size: 5em;
+    }
+    .sobre-nosotros__subtitulo1{
+        width: 90vw;
+        text-align: center;
+    }
+    .sobre-nosotros__subtitulo2{
+        width: 90vw;
+        text-align: center;
+    }
+    .sobre-nosotros__subtitulo3{
+        width: 90vw;
+        text-align: center;
+    }
+    .preguntas-frecuentes nav{
+        display: flex;
+    }
+    .preguntas-frecuentes h3{
+        font-size: 3em;
+    }
+    .preguntas-frecuentes p{
+        font-size: 1.8em;
+    }
+}
