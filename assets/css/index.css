@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../images/fondo.JPG);
+    background-image: linear-gradient(to left bottom, #264f6d, #313851, #2c2534, #1d151b, #000000);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -17,9 +17,7 @@ body{
 html{
     font-size: 62.5%;
 }
-header{/*Estilos barra de navegación */
-    background-image: linear-gradient(to right, #E0E1DD, #E0B03E);
-    }
+/*Estilos barra de navegación */
 .navbar{
     display: flex;
     min-height: 10vh;
@@ -35,48 +33,58 @@ header{/*Estilos barra de navegación */
     justify-content: space-around;
     flex-basis: 65%;
     }
-.navbar ul a{
+.nav-link{
     text-decoration: none;
-    color: #264F6D;
+    color: #E0B03E;
     font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
     padding: 1rem;
     text-align: center;
+    flex-wrap: nowrap;
+    transition: all 2s;
 }
-.navbar ul a:hover{
+.nav-link:hover{
+    color: #E0B03E;
     border-style: solid;
-    border-color:#264F6D;
+    border-width: 1px;
+    border-color: #E0B03E;
+}
+.nav{
+    flex-wrap: nowrap;
 }
 .navbar img{
     height: 10vh;
     min-height: 50px;
 }
-.nav-tabs{
-    border-color: #264F6D;
+.nav-pills .nav-link{
+    border-radius: 1.5rem;
 }
-.nav-tabs .nav-link.active {
-    color: #264F6D;
-    background-color: #e0af3e70;
-    border-color: #264f6d;
+.nav-pills .nav-link.active {
+    color: #264f6d;
+    background-color: #E0B03E;
 }
-.nav-tabs .nav-link:hover {
-    border-color: #264F6D;
-    } 
+.nav-icons{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+} 
     /*Final estilos barra de navegación*/
     /*Página principal*/
 .inicio{
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 5rem;
     align-items: center;
     justify-content: space-around;
 }
 .inicio__titulo h1{ 
     font-family: 'Josefin Sans', sans-serif;
     font-size: 5rem;
-    color: #264F6D;
-    margin-top: 10%;
+    color: #E0B03E;
+    font-weight: lighter;
+    margin-top: 5%;
     text-align: center;
+    -ms-flex-order: 1;
 }
 .inicio__titulo div{
     width: 10vh;
@@ -92,34 +100,49 @@ header{/*Estilos barra de navegación */
     font-weight: bold;
     color: #264F6D;
     }
-.inicio__envios-marcas{
+.inicio__iconos{
     font-size: 1.6em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -ms-flex-order: 2;
 }
-.inicio__envios-marcas h2{
+.inicio__iconos h2{
     flex-basis: 50%;
     text-align: center;
     padding: 3rem;
     max-width: 287px;
     min-width: 252px;
+    color: #E0B03E;
 }
-.inicio__envios-marcas__envios{
-    text-align: left;
+.inicio__iconos__envios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.inicio__envios-marcas__marcas{
-    text-align: right;
+svg{
+    color: #E0B03E;
+}
+.inicio__iconos__marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inicio__iconos__precios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer{ /*pie de pagina*/
-    background-color: #264F6D;
     min-height: 10vh;
+    margin-top: 10vh;
 }
 footer p{
     font-family: 'Raleway', sans-serif;
     color: #E0B03E;
-    font-size: 1.6em;
-    padding: 0.5rem;
+    font-size: 1.3em;
+    margin-bottom: 0.5rem;
+    text-align: center;
 } /*fin pie de página*/
 .sobre-nosotros h2{ /*página sobre nosotros*/
     font-family:'Raleway', sans-serif;
@@ -137,8 +160,20 @@ footer p{
 }
 .sobre-nosotros p{
     font-family: 'Raleway', sans-serif;
-    color: #264F6D;
+    color: #E0B03E;
     font-size: 2em;
+}
+.sobre-nosotros h2{
+    color: #E0B03E;
+}
+.sobre-nosotros section{
+    padding: 3rem;
+    text-align: center;
+    background: rgba( 157, 179, 210, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13px );
+-webkit-backdrop-filter: blur( 13px );
+border-radius: 10px;
 }
 .sobre-nosotros__subtitulo1{
     width: 60vw;
@@ -326,7 +361,7 @@ footer p{
         width: 80vw;
     }
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 675px){
     .navbar{
         flex-direction: column;
     }
@@ -335,6 +370,7 @@ footer p{
         padding: 2rem;
         flex-basis: 100%;
         justify-content: space-between;
+        flex-wrap: nowrap;
     }
     .footer p{
         font-size: 1.5em;
