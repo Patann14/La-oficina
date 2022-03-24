@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --incluide-path scss sass/index.scss assets/css/main.css",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patann14/La-oficina.git"
+  },
+  "author": "patan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patann14/La-oficina/issues"
+  },
+  "homepage": "https://github.com/Patann14/La-oficina#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -35,7 +35,7 @@ html{
     }
 .nav-link{
     text-decoration: none;
-    color: #E0B03E;
+    color: #c38500;
     font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
     padding: 1rem;
@@ -44,10 +44,10 @@ html{
     transition: all 2s;
 }
 .nav-link:hover{
-    color: #E0B03E;
+    color: #c38500;
     border-style: solid;
     border-width: 1px;
-    border-color: #E0B03E;
+    border-color: #c38500;
 }
 .nav{
     flex-wrap: nowrap;
@@ -60,8 +60,11 @@ html{
     border-radius: 1.5rem;
 }
 .nav-pills .nav-link.active {
-    color: #264f6d;
-    background-color: #E0B03E;
+    color: #c38500;
+    border-color: #c38500;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #264f6d00;
 }
 .nav-icons{
     display: flex;
@@ -80,7 +83,7 @@ html{
 .inicio__titulo h1{ 
     font-family: 'Josefin Sans', sans-serif;
     font-size: 5rem;
-    color: #E0B03E;
+    color: #c38500;
     font-weight: lighter;
     margin-top: 5%;
     text-align: center;
@@ -113,7 +116,7 @@ html{
     padding: 3rem;
     max-width: 287px;
     min-width: 252px;
-    color: #E0B03E;
+    color: #c38500;
 }
 .inicio__iconos__envios{
     display: flex;
@@ -121,7 +124,7 @@ html{
     align-items: center;
 }
 svg{
-    color: #E0B03E;
+    color: #c38500;
 }
 .inicio__iconos__marcas{
     display: flex;
@@ -139,7 +142,7 @@ svg{
 }
 footer p{
     font-family: 'Raleway', sans-serif;
-    color: #E0B03E;
+    color: #c38500;
     font-size: 1.3em;
     margin-bottom: 0.5rem;
     text-align: center;
@@ -160,11 +163,11 @@ footer p{
 }
 .sobre-nosotros p{
     font-family: 'Raleway', sans-serif;
-    color: #E0B03E;
+    color: #c38500;
     font-size: 2em;
 }
 .sobre-nosotros h2{
-    color: #E0B03E;
+    color: #c38500;
 }
 .sobre-nosotros section{
     padding: 3rem;
@@ -205,7 +208,7 @@ border-radius: 10px;
 }
 .preguntas-frecuentes a{
     text-decoration: none;
-    color: #E0B03E;
+    color: #c38500;
     font-size: 1.2em;
 }
 .preguntas-frecuentes ul{
