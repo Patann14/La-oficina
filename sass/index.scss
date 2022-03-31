@@ -1,16 +1,9 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-body{
-    background-image: linear-gradient(to left bottom, #264f6d, #313851, #2c2534, #1d151b, #000000);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-html{
-    font-size: 62.5%;
+@import './misc/mixins';
+@import './misc/normalize';
+@import './partials/footer';
+@import './partials/header';
+@import './views/contacto';
+@import './views/home';
+@import './views/nosotros';
+@import './views/preguntas';
+@import './views/productos';

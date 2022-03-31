@@ -1,0 +1,60 @@
+/*página sobre nosotros*/
+
+
+.sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 4rem;
+    h2{
+        font-family:'Raleway', sans-serif;
+        color: #264F6D;
+        font-size: 4em;
+        text-align: center;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        color: #c38500;
+        font-size: 2em;
+    }
+    section{
+        padding: 3rem;
+        text-align: center;
+        background: rgba( 157, 179, 210, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 13px );
+        -webkit-backdrop-filter: blur( 13px );
+        border-radius: 10px;
+        }
+    &__subtitulo1{
+        width: 60vw;
+    }
+    &__subtitulo2{
+        width: 60vw;
+    }
+    &__subtitulo3{
+        width: 60vw;
+        margin-bottom: 4rem;
+    }
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 675px){
+    .sobre-nosotros{
+        &__subtitulo1{
+            width: 90vw;
+            text-align: center;
+        }
+        &__subtitulo2{
+            width: 90vw;
+            text-align: center;
+        }
+        &__subtitulo3{
+            width: 90vw;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+/*Página principal*/
+.inicio{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    &__titulo{
+        h1{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 5rem;
+            color: #c38500;
+            font-weight: lighter;
+            margin-top: 5%;
+            text-align: center;
+            -ms-flex-order: 1;
+        }
+        div{
+            width: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    img{
+        width: 40rem;
+    }
+    div{
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #264F6D;
+    }
+    svg{
+        color: #c38500;
+    }
+    &__iconos{
+        font-size: 1.6em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        -ms-flex-order: 2;
+        h2{
+            flex-basis: 50%;
+            text-align: center;
+            padding: 3rem;
+            max-width: 287px;
+            min-width: 252px;
+            color: #c38500;
+        }
+        &__envios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__marcas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__precios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 675px){
+    .inicio h1{
+        font-size: 5em;
+    }
+}

@@ -1,0 +1,80 @@
+/*preguntas frecuentes*/
+
+.preguntas-frecuentes{
+    ul{ 
+        font-family: 'Raleway', sans-serif;
+        list-style: none;
+        border-style: none;
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    nav{
+        display: none;
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0% auto;
+        padding: 0 2rem;
+        background-color: #c38500;
+    }
+    a{
+        text-decoration: none;
+        color: #c38500;
+        font-size: 1.2em;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 0% auto;
+        padding-left: 1rem;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        color: #c38500;
+        font-size: 2em;
+        text-align: left;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        color: #c38500;
+        font-size: 3.5em;
+        text-align: center;
+    }
+    section{
+        width: 60vw;
+    } 
+} 
+
+/*media queries*/
+
+@media screen and (max-width: 724px) {
+    .preguntas-frecuentes section{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .preguntas-frecuentes{
+        nav{
+            display: flex;
+        }
+        h3{
+           font-size: 3em;
+        }
+        p{
+           font-size: 1.8em;
+        }
+    } 
+}

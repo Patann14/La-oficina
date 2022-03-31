@@ -1,0 +1,96 @@
+/*contacto*/
+
+.contacto{
+    h3{
+        font-family:'Raleway', sans-serif;
+        color: #264F6D;
+        font-size: 25px;
+        text-align: right;
+        margin-top: 15px;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        color: #264F6D;
+        font-size: 20px;
+        text-align: right;
+    }
+    div{
+        width: 300px;
+        height: 400px;
+        padding: 0%;
+        position: absolute;
+        margin-left: 850px;
+        margin-top: 50px;
+    }
+    h2{
+        font-family:'Raleway', sans-serif;
+        color: #264F6D;
+        font-size: 35px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    img{
+        width: 275px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    input{
+        display: inline-block;
+        background-color: #e0af3e73;
+        width: 300px;
+        height: 25px;
+        border-radius: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color: #264F6D;
+        border-color: #264F6D;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    select{
+         display: inline-block;
+        background-color: #e0af3e73;
+        width: 300px;
+        height: 25px;
+        border-radius: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color: #264F6D;
+        border-color: #264F6D;
+    }
+    textarea{
+        display: inline-block;
+        background-color: #e0af3e73;
+        width: 300px;
+        height: 150px;
+        border-radius: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color: #264F6D;
+        border-color: #264F6D;
+        padding: 10px;
+    }
+    label{
+        font-family: 'Raleway', sans-serif;
+        color: #264F6D;
+        font-size: 20px;
+        display: block;
+        text-align: left;
+    }
+    form{
+        display: inline-block;
+        width: 500px;
+        height: auto;
+        padding: 0%;
+        margin-left: 200px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+#enviar{
+    width: 100px;
+    display: block;
+    margin-left: 100px;
+    margin-top: 15px;
+}
