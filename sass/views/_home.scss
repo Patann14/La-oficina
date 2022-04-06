@@ -68,7 +68,12 @@
 /*Media queries*/
 
 @media screen and (max-width: 675px){
-    .inicio h1{
+    .inicio{
+        h1{
         font-size: 5em;
-    }
+        }
+        &__iconos{
+            flex-direction: column;
+        }
+    } 
 }
